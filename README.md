@@ -17,7 +17,7 @@ Das Tutorium ist eine Maßnahme für die Studierenden des Fachbereich 5, um sich
 
 ## Mit dem GitHub Repo arbeiten
 
-In den GitHub Dateien findet ihr die jeweiligen Tutorials zu den einzelnen Themen, die wir jeweils behandeln. Der Ordner 00-setup enthält ein Tutorial, um alle vorraussetzungen für den Kurs zu installieren. Er sollt demnach immer als erstes abgearbeitet werden, auch wenn ihr asynchron arbeitet oder nur zu einzelnen Terminen kommt.
+In den GitHub Dateien findet ihr die jeweiligen Tutorials zu den einzelnen Themen, die wir jeweils behandeln. Der Ordner 00-setup enthält ein Tutorial, um alle vorraussetzungen für den Kurs zu installieren. Er sollte demnach immer als erstes abgearbeitet werden, auch wenn ihr asynchron arbeitet oder nur zu einzelnen Terminen kommt.
 
 Die folgenden Ordner enthalten alle nötigen Dateien und Tutorials, die wir im Kurs durchgehen. So könnt ihr auch asynchron nacharbeiten. Vor Ort gehen wir gemeinsam alles durch und ihr könnt spezifischere Fragen stellen, oder wir können gemeinsam an Lösungen und Themen arbeiten.
 
