@@ -1,6 +1,10 @@
 # Installationsanleitung für den Kurs
 
-Diese Datei ist die kompakte Version des Setups. Wenn du eine ausführlichere Erklärung brauchst, lies [setup-für-den-kurs.md](./setup-für-den-kurs.md).
+---
+
+**Diese Datei ist die kompakte Version des Setups.** Wenn du eine ausführlichere Erklärung brauchst, lies [setup.md](./setup.md).
+
+---
 
 ## macOS: Kurzinstallation
 
@@ -26,14 +30,16 @@ brew install git
 git --version
 ```
 
-Git einmalig einrichten:
+**Git einmalig einrichten:**
 
 ```bash
 git config --global user.name "Dein Name"
 git config --global user.email "deine-email@example.com"
 ```
 
-### 4. Visual Studio Code installieren
+### 4. Visual Studio Code oder Zed installieren
+
+#### Option A: Visual Studio Code
 
 1. Lade VS Code von [https://code.visualstudio.com](https://code.visualstudio.com) herunter.
 2. Öffne die `.dmg`-Datei.
@@ -42,13 +48,20 @@ git config --global user.email "deine-email@example.com"
 5. Drücke `Cmd + Shift + P`.
 6. Führe `Shell Command: Install 'code' command in PATH` aus.
 
-Prüfen:
+**Prüfen:**
 
 ```bash
 code --version
 ```
 
-Danach in VS Code die Python-Erweiterung von Microsoft installieren.
+Danach in VS Code die **Python-Erweiterung von Microsoft** installieren.
+
+#### Option B: Zed
+
+1. Lade Zed von [https://zed.dev/download](https://zed.dev/download) herunter.
+2. Öffne die `.dmg`-Datei.
+3. Ziehe `Zed.app` in den Programme-Ordner.
+4. Öffne Zed einmal.
 
 ### 5. Python installieren
 
@@ -78,7 +91,7 @@ pip show strands-agents
 3. Ziehe `Ollama.app` in den Programme-Ordner.
 4. Starte Ollama einmal.
 
-Prüfen:
+**Prüfen:**
 
 ```bash
 ollama --version
@@ -94,6 +107,8 @@ pip3 --version
 code --version
 ollama --version
 ```
+
+---
 
 ## Windows: Kurzinstallation
 
@@ -124,26 +139,34 @@ winget install --id Git.Git -e --source winget
 git --version
 ```
 
-Git einmalig einrichten:
+**Git einmalig einrichten:**
 
 ```powershell
 git config --global user.name "Dein Name"
 git config --global user.email "deine-email@example.com"
 ```
 
-### 4. Visual Studio Code installieren
+### 4. Visual Studio Code oder Zed installieren
+
+#### Option A: Visual Studio Code
 
 1. Lade VS Code von [https://code.visualstudio.com](https://code.visualstudio.com) herunter.
 2. Starte den `User Setup`-Installer.
 3. Öffne nach der Installation ein neues Terminal.
 
-Prüfen:
+**Prüfen:**
 
 ```powershell
 code --version
 ```
 
-Danach in VS Code die Python-Erweiterung von Microsoft installieren.
+Danach in VS Code die **Python-Erweiterung von Microsoft** installieren.
+
+#### Option B: Zed
+
+1. Lade Zed von [https://zed.dev/download](https://zed.dev/download) herunter.
+2. Starte den Windows-Installer.
+3. Öffne Zed nach der Installation einmal.
 
 ### 5. Python installieren
 
@@ -152,7 +175,7 @@ Danach in VS Code die Python-Erweiterung von Microsoft installieren.
 3. Aktiviere im Installer `Add Python to PATH`, falls diese Option angezeigt wird.
 4. Installiere Python.
 
-Prüfen:
+**Prüfen:**
 
 ```powershell
 python --version
@@ -189,7 +212,7 @@ Wenn PowerShell die Aktivierung blockiert, nutze stattdessen:
 2. Starte den Installer.
 3. Öffne danach ein neues Terminal.
 
-Prüfen:
+**Prüfen:**
 
 ```powershell
 ollama --version
@@ -211,6 +234,8 @@ Wenn `python` nicht funktioniert:
 ```powershell
 py --version
 ```
+
+---
 
 ## Danach
 

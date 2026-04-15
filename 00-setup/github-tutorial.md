@@ -1,36 +1,42 @@
 # GitHub-Tutorial
 
-## In diesem Tutorial:
+---
 
-- ein Repository auf deinen Computer clonst
-- lokale Änderungen sicher speicherst, ohne den gemeinsamen Stand zu überschreiben
-- den neuesten Stand aus dem Online-Repository holst, ohne deine eigene Arbeit zu verlieren
-- die wichtigsten Git- und GitHub-Befehle im Terminal verwendest
+## In diesem Tutorial
+
+In diesem Tutorial lernst du:
+
+- **ein Repository** auf deinen Computer zu clonen
+- **lokale Änderungen** sicher zu speichern, ohne den gemeinsamen Stand zu überschreiben
+- **den neuesten Stand** aus dem Online-Repository zu holen, ohne deine eigene Arbeit zu verlieren
+- **die wichtigsten Git- und GitHub-Befehle** im Terminal zu verwenden
+
+---
 
 ## Wichtige Begriffe
 
-- `Git` ist das Programm, das Änderungen an Dateien verfolgt.
-- `GitHub` ist die Online-Plattform, auf der Git-Repositories gespeichert und geteilt werden.
-- ein `Repository` (auch `Repo) ist ein Projektordner mit Versionsgeschichte.
-- `lokal` bedeutet: auf deinem eigenen Computer.
-- `remote` bedeutet: online auf GitHub.
-- `commit` bedeutet: einen klaren Zwischenstand deiner Arbeit speichern.
-- `push` bedeutet: deine lokalen Commits auf GitHub hochladen.
-- `pull` bedeutet: neue Änderungen von GitHub auf deinen Computer holen.
-- `branch` bedeutet: eine eigene Version der Dateien, auf der man parallel arbeiten kann.
+- **`Git`** ist das Programm, das Änderungen an Dateien verfolgt.
+- **`GitHub`** ist die Online-Plattform, auf der Git-Repositories gespeichert und geteilt werden.
+- Ein **`Repository`** (auch **`Repo`**) ist ein Projektordner mit Versionsgeschichte.
+- **`lokal`** bedeutet: auf deinem eigenen Computer.
+- **`remote`** bedeutet: online auf GitHub.
+- **`commit`** bedeutet: einen klaren Zwischenstand deiner Arbeit speichern.
+- **`push`** bedeutet: deine lokalen Commits auf GitHub hochladen.
+- **`pull`** bedeutet: neue Änderungen von GitHub auf deinen Computer holen.
+- **`branch`** bedeutet: eine eigene Version der Dateien, auf der man parallel arbeiten kann.
 
--------
+---
 
 ## 1. Ein Repository clonen
 
-`Clonen` bedeutet: Du lädst ein bestehendes GitHub-Repository auf deinen Computer.
+**`Clonen` bedeutet:** Du lädst ein bestehendes GitHub-Repository auf deinen Computer.
 
--------
+---
 
 ### Repository-URL auf GitHub kopieren
 
 1. Öffne das gewünschte Repository auf GitHub.
-2. Klicke auf den grünen Button `Code`.
+2. Klicke auf den grünen Button **`Code`**.
 3. Kopiere die HTTPS-URL des Repositories.
 
 Sie sieht oft ungefähr so aus:
@@ -88,17 +94,17 @@ On branch main
 nothing to commit, working tree clean
 ```
 
--------
+---
 
 ### Dasselbe in VS Code
 
-#### Visual Studio Code vorbereiten (optional)
+#### Visual Studio Code vorbereiten
 
 Viele Studierende arbeiten parallel im Terminal und in Visual Studio Code. Das ist sinnvoll:
 
-- im Terminal führst du Git-Befehle aus
-- in VS Code bearbeitest du Dateien
-- in VS Code kannst du Änderungen, Commits und Synchronisation auch visuell sehen
+- Im Terminal führst du **Git-Befehle** aus.
+- In VS Code bearbeitest du **Dateien**.
+- In VS Code kannst du **Änderungen, Commits und Synchronisation** auch visuell sehen.
 
 #### VS Code installieren
 
@@ -108,24 +114,26 @@ Falls VS Code noch nicht installiert ist:
 2. Lade die Version für dein Betriebssystem herunter.
 3. Installiere das Programm.
 
-### Git in VS Code sichtbar machen
+#### Git in VS Code sichtbar machen
 
 1. Öffne VS Code.
-2. Öffne links die Ansicht `Source Control`.
+2. Öffne links die Ansicht **`Source Control`**.
 3. Wenn dein Projekt ein Git-Repository ist, zeigt VS Code dort geänderte Dateien, Commits und Sync-Optionen an.
 
+#### Repository direkt in VS Code clonen
+
 1. Öffne VS Code.
-2. Drücke `Cmd + Shift + P` auf macOS oder `Ctrl + Shift + P` auf Windows.
-3. Suche nach `Git: Clone`.
+2. Drücke **`Cmd + Shift + P`** auf macOS oder **`Ctrl + Shift + P`** auf Windows.
+3. Suche nach **`Git: Clone`**.
 4. Füge die Repository-URL ein.
 5. Wähle einen lokalen Speicherort.
 6. Öffne das Projekt nach dem Clonen in VS Code.
 
--------
+---
 
 ## 2. Sicher arbeiten, ohne den gemeinsamen Stand zu überschreiben
 
-Das wichtigste Prinzip lautet:
+**Das wichtigste Prinzip lautet:**
 
 - erst den aktuellen Stand holen
 - dann arbeiten
@@ -147,7 +155,7 @@ Beispiel:
 git switch -c mia-layout-test
 ```
 
-Damit arbeitest du nicht direkt auf `main`, sondern auf deiner eigenen Arbeitsversion.
+Damit arbeitest du nicht direkt auf **`main`**, sondern auf deiner eigenen Arbeitsversion.
 
 Prüfen:
 
@@ -165,7 +173,7 @@ Bevor du etwas speicherst oder aktualisierst:
 git status
 ```
 
-Dieser Befehl ist einer der wichtigsten überhaupt. Er zeigt dir:
+**Dieser Befehl ist einer der wichtigsten überhaupt.** Er zeigt dir:
 
 - welche Dateien geändert wurden
 - welche Dateien schon für einen Commit vorgemerkt sind
@@ -223,18 +231,18 @@ Später reicht meist:
 git push
 ```
 
--------
+---
 
 ### Dasselbe in VS Code
 
-1. Öffne links unten das Fenster `Source Control`.
+1. Öffne links unten das Fenster **`Source Control`**.
 2. Dort siehst du alle geänderten Dateien.
-3. Klicke bei einzelnen Dateien auf das `+`, um nur diese Dateien zu stagen.
-4. Schreibe oben eine Commit Message.
-5. Klicke auf `Commit`.
-6. Klicke anschließend auf `Sync Changes` oder `Push`, falls nötig.
+3. Klicke bei einzelnen Dateien auf das **`+`**, um nur diese Dateien zu stagen.
+4. Schreibe oben eine **Commit Message**.
+5. Klicke auf **`Commit`**.
+6. Klicke anschließend auf **`Sync Changes`** oder **`Push`**, falls nötig.
 
--------
+---
 
 ## 3. Globale Dateien aktualisieren, ohne den eigenen Stand zu verlieren
 
@@ -251,7 +259,7 @@ git status
 2. Wenn du Änderungen hast, zuerst:
 
 - committen, wenn der Stand sinnvoll ist
-- oder `stash` verwenden, wenn es nur ein kurzer Zwischenstand ist
+- oder **`stash`** verwenden, wenn es nur ein kurzer Zwischenstand ist
 
 3. Danach neue Änderungen holen:
 
@@ -259,7 +267,7 @@ git status
 git pull --rebase
 ```
 
-Warum `--rebase`?
+### Warum `--rebase`?
 
 - deine eigenen Commits bleiben erhalten
 - die Projektgeschichte bleibt oft übersichtlicher
@@ -277,7 +285,7 @@ git push
 
 ### Wenn es zu einem Konflikt kommt
 
-Ein Konflikt bedeutet: Git weiss nicht automatisch, welche Version einer Datei behalten werden soll.
+Ein Konflikt bedeutet: Git weiß nicht automatisch, welche Version einer Datei behalten werden soll.
 
 Dann gilt:
 
@@ -300,14 +308,16 @@ Falls du abbrechen musst:
 git rebase --abort
 ```
 
--------
+---
 
 ### Dasselbe in VS Code
 
-1. Öffne `Source Control`.
-2. Wenn Updates vorhanden sind, kannst du dort `Pull`, `Sync` oder `Fetch` ausführen.
-3. Bei Konflikten zeigt VS Code meist direkt Schaltflächen wie `Accept Current`, `Accept Incoming` oder `Accept Both`.
+1. Öffne **`Source Control`**.
+2. Wenn Updates vorhanden sind, kannst du dort **`Pull`**, **`Sync`** oder **`Fetch`** ausführen.
+3. Bei Konflikten zeigt VS Code meist direkt Schaltflächen wie **`Accept Current`**, **`Accept Incoming`** oder **`Accept Both`**.
 4. Prüfe das Ergebnis trotzdem immer manuell.
+
+---
 
 ## 4. Empfohlener Ablauf im Kurs
 
@@ -353,7 +363,7 @@ Wenn du mit Branches arbeitest und noch nie gepusht hast:
 git push -u origin branch-name
 ```
 
--------
+---
 
 ## 5. GitHub Best Practices
 
@@ -365,13 +375,13 @@ Eine gute Commit Message ist:
 - konkret
 - inhaltlich klar
 
-Gut:
+**Gut:**
 
 - `Git-Begriffe im Tutorial ergänzt`
 - `Fehler in der Clone-Anleitung korrigiert`
 - `Abschnitt zu VS Code hinzugefügt`
 
-Weniger gut:
+**Weniger gut:**
 
 - `update`
 - `stuff`
@@ -383,14 +393,14 @@ Committe:
 
 - nach einem klaren Arbeitsschritt
 - wenn ein Abschnitt sinnvoll abgeschlossen ist
-- bevor du grössere Updates aus dem Remote holst
+- bevor du größere Updates aus dem Remote holst
 - bevor du eine Pause machst, wenn du einen sauberen Zwischenstand hast
 
 ### Wie viel auf einmal committen?
 
 Am besten nicht zu viel und nicht zu wenig.
 
-Gut ist:
+**Gut ist:**
 
 - ein Commit = eine zusammenhängende Idee oder Änderung
 
@@ -400,45 +410,45 @@ Beispiele:
 - ein Commit für eine Korrektur mehrerer Tippfehler
 - ein Commit für eine klar abgegrenzte Layout-Änderung
 
-Weniger gut ist:
+**Weniger gut ist:**
 
 - viele komplett verschiedene Themen in einem einzigen Commit
 - jede winzige Einzelzeile als eigener Commit
 
 ### Vor jedem Push kurz prüfen
 
-Bevor du `push` verwendest, frage dich:
+Bevor du **`push`** verwendest, frage dich:
 
 - Habe ich die richtigen Dateien ausgewählt?
 - Ist die Commit Message verständlich?
 - Arbeite ich auf der richtigen Branch?
 - Ist mein Stand aktuell genug?
 
--------
+---
 
 ## 6. GitHub-Terminal-Commands Cheat Sheet
 
 ### Navigation
 
-In einen Ordner wechseln:
+**In einen Ordner wechseln:**
 
 ```bash
 cd ordnername
 ```
 
-In den nächsthöheren Ordner wechseln:
+**In den nächsthöheren Ordner wechseln:**
 
 ```bash
 cd ..
 ```
 
-Aktuellen Ordner anzeigen:
+**Aktuellen Ordner anzeigen:**
 
 ```bash
 pwd
 ```
 
-Dateien im aktuellen Ordner anzeigen:
+**Dateien im aktuellen Ordner anzeigen:**
 
 #### macOS
 
@@ -454,73 +464,73 @@ dir
 
 ### Git-Grundbefehle
 
-Status prüfen:
+**Status prüfen:**
 
 ```bash
 git status
 ```
 
-Repository clonen:
+**Repository clonen:**
 
 ```bash
 git clone REPOSITORY-URL
 ```
 
-In eine neue Branch wechseln und sie gleichzeitig anlegen:
+**In eine neue Branch wechseln und sie gleichzeitig anlegen:**
 
 ```bash
 git switch -c branch-name
 ```
 
-Vorhandene Branches anzeigen:
+**Vorhandene Branches anzeigen:**
 
 ```bash
 git branch
 ```
 
-Datei für Commit vormerken:
+**Datei für Commit vormerken:**
 
 ```bash
 git add dateiname
 ```
 
-Alle geänderten Dateien vormerken:
+**Alle geänderten Dateien vormerken:**
 
 ```bash
 git add .
 ```
 
-Commit erstellen:
+**Commit erstellen:**
 
 ```bash
 git commit -m "Beschreibung"
 ```
 
-Neue Änderungen von GitHub holen:
+**Neue Änderungen von GitHub holen:**
 
 ```bash
 git pull --rebase
 ```
 
-Eigene Änderungen auf GitHub hochladen:
+**Eigene Änderungen auf GitHub hochladen:**
 
 ```bash
 git push
 ```
 
-Zwischenstand kurzfristig sichern:
+**Zwischenstand kurzfristig sichern:**
 
 ```bash
 git stash push -m "Zwischenstand"
 ```
 
-Zwischenstand zurückholen:
+**Zwischenstand zurückholen:**
 
 ```bash
 git stash pop
 ```
 
--------
+---
 
 ## 7. Die drei wichtigsten Befehle für den Anfang
 
@@ -532,13 +542,13 @@ git add .
 git commit -m "Beschreibung"
 ```
 
-Kurz gesagt:
+**Kurz gesagt:**
 
 - `git status` zeigt dir, was los ist
 - `git add` wählt Dateien für den nächsten Commit aus
 - `git commit` speichert deinen Arbeitsstand sinnvoll ab
 
--------
+---
 
 ## 8. Merksatz für den Kurs
 
@@ -548,4 +558,4 @@ Arbeite ruhig und in kleinen Schritten:
 2. dann sinnvoll speichern mit `git add` und `git commit`
 3. dann aktualisieren oder hochladen mit `git pull --rebase` und `git push`
 
-Wenn du unsicher bist, führe nicht sofort viele Befehle hintereinander aus. Erst lesen, dann verstehen, dann den nächsten Schritt machen.
+**Wenn du unsicher bist:** Führe nicht sofort viele Befehle hintereinander aus. Erst lesen, dann verstehen, dann den nächsten Schritt machen.
