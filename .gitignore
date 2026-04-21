@@ -8,5 +8,6 @@ student-sandbox/**
 
 # Ignore local Slidev scaffold/output, but keep the deck source
 slides/**
-!slides/
-!slides/slides.md
+
+# ignore .venv
+.venv/**
