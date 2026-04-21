@@ -31,7 +31,7 @@ Das Modell generiert Antwort-Tokens nacheinander und schickt sie als Stream zur�
 
 ### Beispiel zur Veranschaulichung
 
-Stell dir vor, du arbeitest an einem persönlichen Tagebuchprojekt als Zine:
+Stell dir vor, du arbeitest an einem persönlichen Tagebuchprojekt:
 
 - In der **Cloud-Variante** schickst du Fragmente deiner Tagebucheinträge an eine API, die dir poetische Umformulierungen oder Illustrationsideen generiert.
 - In der **lokalen Variante mit Ollama** liegen deine Texte und das Modell auf demselben Laptop; nichts verlässt das Gerät, du kannst offline im Zug weiterarbeiten und experimentierst frei, ohne Tokenpreise im Kopf zu haben.[^1][^4]
@@ -50,9 +50,17 @@ Wenn von **7B, 13B oder 70B** gesprochen wird, meint das die ungefähre Anzahl d
 
 ### Wie viel brauche ich für kreative Projekte?
 
-Studien und Praxisvergleiche zeigen, dass sehr kleine Modelle (unter ca. 3B Parametern) oft bei mehrschrittigem Denken, komplexen Anweisungen oder stilistisch anspruchsvollen Aufgaben schwächeln. Im Bereich **7B–13B** finden viele Anwender einen guten Kompromiss aus Verständlichkeit, Geschwindigkeit und Hardwarebedarf – besonders, wenn die Modelle quantisiert und gut optimiert sind.[^10][^11][^7]
+Die passende Modellgröße hängt weniger davon ab, ob ein Projekt „kreativ“ ist, sondern davon, **welche Aufgabe** das Modell übernehmen soll. Ein kleines Modell kann für schnelle Textvarianten völlig reichen, während komplexe Agenten-Workflows oder Bildgenerierung deutlich mehr Leistung brauchen.
 
-Für viele kreative Anwendungen – Ideenfindung, Textvarianten, Story-Fragmente, simple Code-Hilfen – reicht ein solches mittelgroßes Modell aus, wenn du ihm mit **klarem Prompting und gutem Kontext** hilfst. Für sehr anspruchsvolle Aufgaben (lange, konsistente Stories, tiefes Fachwissen, komplexes Debugging) sind große Cloud-Modelle weiterhin im Vorteil.[^6][^7][^1]
+Für **kurze Texte, Notizen, einfache Ideenlisten oder Stilvarianten** reichen oft kleine bis mittlere Sprachmodelle. Sie sind schnell, günstig und gut geeignet, wenn du die Ergebnisse ohnehin kuratierst und überarbeitest.
+
+Für **längere Texte, konsistente Figuren, komplexere Argumente oder Code-Hilfe** werden mittlere bis große Modelle sinnvoller. Hier zählt nicht nur Sprachgefühl, sondern auch Kontextverständnis: Das Modell muss über mehrere Absätze, Dateien oder Anforderungen hinweg stabil bleiben.
+
+Für **Bildgenerierung** brauchst du kein größeres Sprachmodell, sondern ein anderes Modell: ein spezialisiertes Bildmodell wie Stable Diffusion, Midjourney oder DALL-E. Ein LLM kann dafür Prompts, Bildkonzepte oder Beschreibungen schreiben, aber es erzeugt die Pixel nicht selbst.
+
+Für **Recherche im Internet, Tool-Nutzung oder Agenten-Workflows** sind stärkere Modelle oft hilfreicher, weil sie mehrere Schritte planen, Suchergebnisse bewerten, Widersprüche erkennen und Zwischenergebnisse zusammenführen müssen. Je mehr Tools und Entscheidungen beteiligt sind, desto wichtiger werden Reasoning, Kontextfenster und Zuverlässigkeit.[^6][^7][^1]
+
+Eine praktische Faustregel: **Nimm das kleinste Modell, das deine Aufgabe zuverlässig genug löst.** Für Skizzen und Varianten darf es klein sein; für Recherche, Agenten und finale Entscheidungen sollte es robuster sein.
 
 ### Wichtige Steuerparameter für Kreativität
 
@@ -67,7 +75,7 @@ Empirische Untersuchungen deuten darauf hin, dass höhere Temperature-Werte zwar
 
 Du willst einen **generativen Textgenerator** für Ausstellungslabels bauen:
 
-- Mit einem **7B-Modell über Ollama** kannst du kurze Texte generieren, die du kuratorisch nachbearbeitest – hier ist Geschwindigkeit und Kontrolle wichtiger als „perfekte“ Formulierungen.
+- Mit einem **3B-Modell über Ollama** kannst du kurze Texte generieren, die du kuratorisch nachbearbeitest – hier ist Geschwindigkeit und Kontrolle wichtiger als „perfekte“ Formulierungen.
 - Über einen **Cloud-Anbieter mit großem Modell** könntest du versuchen, sehr kohärente, lange Texte zu erzeugen, die schon fast druckfertig sind – dafür sind Kosten, Datenschutz und Abhängigkeit höher.[^2][^1]
 
 In der Praxis kann es sinnvoll sein, die **erste Ideenphase** lokal zu fahren und nur für ausgewählte finale Texte einen starken Cloud-Dienst einzusetzen.
@@ -97,20 +105,33 @@ Ein LLM ist dabei die „Denkkomponente“, aber der Agent umfasst zusätzlich:
 - **Planung:** Zerlegen eines Ziels in Schritte, Abhaken von Subtasks.
 - **Memory:** Strukturiertes Merken von Zwischenergebnissen, Kontext und Entscheidungen.[^13][^6]
 
+
 ### Zusammenarbeit von Agenten
 
 In Multi-Agent-Systemen übernehmen unterschiedliche Agenten spezialisierte Rollen, z. B. „Researcher“, „Critic“, „Planner“. Sie können sich gegenseitig Ergebnisse zuspielen, kontrollieren oder verwerfen und so komplexere Aufgaben bearbeiten als ein einzelner Chatbot, der nur auf deine Eingaben reagiert.[^6][^13]
 
 Für kreative Projekte ist spannend, dass man etwa einen **„Writer-Agent“**, einen **„Editor-Agent“** und einen **„Curator-Agent“** auf denselben Inhalt ansetzen kann – jeder mit eigener Perspektive und eigenen Systemprompts.
 
-### Beispiel zur Veranschaulichung
+# Was können Agenten im kreativen Bereich bringen?
 
-Stell dir vor, du arbeitest an einer **interaktiven Installation**:
+Du KANNST Agenten und AI-Chatbots in der Entwicklung deiner Projekte benutzen. Hier sind sie vorallem ausgelegt auf: **Recherche, Entwickiung (Rapid Prototyping & Vibe Coding) und Dokumentation**. Das ist aber in meinen Augen nur die (bald ausgespielte) Spitze des Eisbergs.
 
-- Als **reiner Chatbot** könnte das System Besuchenden Fragen beantworten oder Statements zur Ausstellung generieren – aber nur, wenn jemand aktiv etwas eintippt.
-- Als **Agent** könnte das System aktiv Logs auswerten, Sensorwerte lesen, generative Inhalte im Raum verändern, Dateien aktualisieren oder neue Variationen eines Texts produzieren, ohne dass du jeden Schritt manuell anstößt.[^6]
+Viel spannender wird es, wenn Agenten als Teil deiner Arbeit fungieren. Du kannst sie nutzen, um das Erlebnis für die Rezipierenden individuell zu gestalten oder sie als "Ersatz" für menschliches Handeln sehen. Jennifer Walshe hat es so ausgedrückt: 
+```bash
+"For many researchers, 'A.I.'is the possibility of a completely fascinating encounter with the nature of human consciousness, a way of trying to understand what intelligence is, how the mind happens, offering a new way of encountering ourselves."
+```
 
-Im Kurs ist die entscheidende Unterscheidung: **Wir wollen nicht nur „mit einer KI chatten“, sondern Systeme bauen, die mitdenken, handeln und in unsere eigenen kreativen Prozesse integriert sind.**
+## Beispiele
+
+### 1. Threshold State:
+```bash
+https://ars.electronica.art/panic/en/view/threshold-state-21d38ddb450c81f5907acffdd616b527/
+```
+
+Threshold State explores power and political bias in opaque digital systems through a border control-style booth where visitors submit personal information. The data is then fed into an AI that delivers a judgment—granting or denying a fictional entry. The installation mirrors real border procedures, revealing how human and algorithmic decisions stem from incomplete data and political bias. It prompts reflection on surveillance, identity, and fairness in automated control systems.
+
+**Das (Multi-) Agent System hinter dem Projekt liest die persönlichen Informationen, macht eine Google Suche, fasst die Ergebnisse zusammen und errechnet dann anhand bestimmter Kriterien, ob eine Person zutritt zu diesem fiktiven Staat bekommt.**
+
 
 ---
 

@@ -6,5 +6,7 @@ student-sandbox/**
 !student-sandbox/**/
 !student-sandbox/**/.gitkeep
 
-#ignore slidev slides
+# Ignore local Slidev scaffold/output, but keep the deck source
 slides/**
+!slides/
+!slides/slides.md
