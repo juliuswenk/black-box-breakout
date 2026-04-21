@@ -1,3 +1,10 @@
-student-sandbox
-student-sandbox/meine-dateien
-student-sandbox/meine-notizen.md
+# Ignore all student files
+student-sandbox/**
+
+# But keep the folder structure
+!student-sandbox/
+!student-sandbox/**/
+!student-sandbox/**/.gitkeep
+
+#ignore slidev slides
+slides/**
