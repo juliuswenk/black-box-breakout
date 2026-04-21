@@ -120,47 +120,7 @@ zed --version
 
 ---
 
-## 6. OpenCode installieren und in Zed öffnen
-
-**OpenCode** ist ein Coding-Agent. In Zed läuft OpenCode über das **Agent Client Protocol (ACP)**. Zed startet dafür im Hintergrund den Befehl `opencode acp`.
-
-Die OpenCode-Dokumentation empfiehlt für Windows grundsätzlich WSL. Für dieses native Windows-Setup installieren wir OpenCode über Node.js und `npm`.
-
-1. Installiere Node.js LTS:
-
-```powershell
-winget install --id OpenJS.NodeJS.LTS -e --source winget
-```
-
-2. Öffne danach ein neues Terminal.
-3. Installiere OpenCode:
-
-```powershell
-npm install -g opencode-ai
-```
-
-4. Prüfe die Installation:
-
-```powershell
-opencode --version
-```
-
-Node.js ist hier nötig, weil OpenCode in diesem Windows-Setup über `npm` installiert wird. Für die Zed-Erweiterung allein müsstest du Node.js nicht separat installieren.
-
-### OpenCode mit Zed verbinden
-
-1. Öffne Zed.
-2. Öffne das `Extensions`-Fenster über `Zed > Extensions` oder `Ctrl + Shift + X`.
-3. Suche nach `OpenCode` und installiere die Erweiterung.
-4. Öffne das Agent Panel mit der Schaltfläche unten rechts oder `Ctrl + ?`.
-5. Klicke auf das Plus-Symbol oben rechts und wähle `OpenCode`.
-6. Verbinde beim ersten Start deinen gewünschten Modellanbieter mit `/connect`, falls OpenCode danach fragt.
-
-Jetzt kannst du mit dem Coding Agent entwickeln.
-
----
-
-## 7. Python installieren
+## 6. Python installieren
 
 Für das Strands SDK brauchst du Python **`3.10+`**.
 
@@ -191,7 +151,7 @@ py --version
 
 ---
 
-## 8. Einen Kursordner anlegen und das Strands SDK installieren
+## 7. Einen Kursordner anlegen und das Strands SDK installieren
 
 Wie auf macOS arbeiten wir auch unter Windows mit einer virtuellen Umgebung.
 
@@ -253,7 +213,7 @@ deactivate
 
 ---
 
-## 9. Ollama installieren
+## 8. Ollama installieren
 
 Die offizielle Ollama-Doku für Windows sagt:
 
@@ -282,7 +242,8 @@ ollama --version
 
 ---
 
-## 10. Alles kurz testen
+## 9. Alles kurz testen
+
 
 Wenn alles installiert ist, sollten diese Befehle funktionieren:
 
@@ -303,7 +264,6 @@ py --version
 ```
 
 ---
-
-## 11. Danach
+## 10. Danach
 
 Wenn dein Setup fertig ist, lies als Nächstes [github-tutorial.md](./github-tutorial.md).

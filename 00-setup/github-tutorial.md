@@ -72,7 +72,7 @@ Wenn das bei dir nicht funktioniert, kannst du im Windows-Terminal auch zuerst m
 Ersetze die URL durch die URL deines Projekts:
 
 ```bash
-git clone https://github.com/username/projektname.git
+git clone https://github.com/juliuswenk/black-box-breakout.git
 ```
 
 Danach in den Projektordner wechseln:
@@ -96,38 +96,39 @@ nothing to commit, working tree clean
 
 ---
 
-### Dasselbe in VS Code
+### Dasselbe in Zed
 
-#### Visual Studio Code vorbereiten
+#### Zed vorbereiten
 
-Viele Studierende arbeiten parallel im Terminal und in Visual Studio Code. Das ist sinnvoll:
+Viele Studierende arbeiten parallel im Terminal und in Zed. Das ist sinnvoll:
 
 - Im Terminal führst du **Git-Befehle** aus.
-- In VS Code bearbeitest du **Dateien**.
-- In VS Code kannst du **Änderungen, Commits und Synchronisation** auch visuell sehen.
+- In Zed bearbeitest du **Dateien**.
+- In Zed kannst du **Änderungen, Commits und Synchronisation** auch visuell sehen.
 
-#### VS Code installieren
+#### Zed installieren
 
-Falls VS Code noch nicht installiert ist:
+Falls Zed noch nicht installiert ist, nutze zuerst die passende Setup-Anleitung:
 
-1. Gehe auf [https://code.visualstudio.com](https://code.visualstudio.com).
-2. Lade die Version für dein Betriebssystem herunter.
-3. Installiere das Programm.
+1. [macOS-setup.md](./macOS-setup.md)
+2. [windows-setup.md](./windows-setup.md)
 
-#### Git in VS Code sichtbar machen
+#### Git in Zed sichtbar machen
 
-1. Öffne VS Code.
-2. Öffne links die Ansicht **`Source Control`**.
-3. Wenn dein Projekt ein Git-Repository ist, zeigt VS Code dort geänderte Dateien, Commits und Sync-Optionen an.
+1. Öffne Zed.
+2. Öffne das **Git Panel** über das Git-Symbol in der Statusleiste oder über die Command Palette.
+3. Suche in der Command Palette nach **`git panel: toggle focus`**, falls du das Panel nicht findest.
+4. Wenn dein Projekt ein Git-Repository ist, zeigt Zed dort geänderte Dateien, Commits und Sync-Optionen an.
 
-#### Repository direkt in VS Code clonen
+#### Repository direkt in Zed clonen
 
-1. Öffne VS Code.
+1. Öffne Zed.
 2. Drücke **`Cmd + Shift + P`** auf macOS oder **`Ctrl + Shift + P`** auf Windows.
-3. Suche nach **`Git: Clone`**.
-4. Füge die Repository-URL ein.
-5. Wähle einen lokalen Speicherort.
-6. Öffne das Projekt nach dem Clonen in VS Code.
+3. Suche nach **`Welcome`**, falls die Willkommensseite nicht schon geöffnet ist.
+4. Wähle auf der Willkommensseite **`Clone Repository`**.
+5. Füge die Repository-URL ein.
+6. Wähle einen lokalen Speicherort.
+7. Öffne das Projekt nach dem Clonen in Zed.
 
 ---
 
@@ -146,7 +147,7 @@ Wenn mehrere Menschen an denselben Dateien arbeiten, ist eine eigene Branch oft 
 Direkt nach dem Clonen oder bevor du mit einer neuen Aufgabe beginnst:
 
 ```bash
-git switch -c vorname-aufgabe
+git switch -c vorname-stunden-name
 ```
 
 Beispiel:
@@ -216,7 +217,7 @@ git commit -m "Kurze klare Beschreibung der Änderung"
 Beispiel:
 
 ```bash
-git commit -m "Erklärung zu Git-Grundbegriffen ergänzt"
+git commit -m "Nachriten-Agent erstellt"
 ```
 
 4. Falls du auf einer neuen Branch arbeitest, zum ersten Mal hochladen:
@@ -233,14 +234,14 @@ git push
 
 ---
 
-### Dasselbe in VS Code
+### Dasselbe in Zed
 
-1. Öffne links unten das Fenster **`Source Control`**.
+1. Öffne das **Git Panel**.
 2. Dort siehst du alle geänderten Dateien.
-3. Klicke bei einzelnen Dateien auf das **`+`**, um nur diese Dateien zu stagen.
-4. Schreibe oben eine **Commit Message**.
+3. Aktiviere bei einzelnen Dateien die Checkbox, um nur diese Dateien zu stagen.
+4. Schreibe unten eine **Commit Message**.
 5. Klicke auf **`Commit`**.
-6. Klicke anschließend auf **`Sync Changes`** oder **`Push`**, falls nötig.
+6. Klicke anschließend auf **`Push`**, falls nötig.
 
 ---
 
@@ -291,7 +292,7 @@ Dann gilt:
 
 1. Ruhe behalten.
 2. `git status` ausführen.
-3. Die betroffenen Dateien in VS Code öffnen.
+3. Die betroffenen Dateien in Zed öffnen.
 4. Die markierten Konfliktstellen lesen.
 5. Entscheiden, welche Inhalte bleiben sollen.
 6. Datei speichern.
@@ -310,11 +311,11 @@ git rebase --abort
 
 ---
 
-### Dasselbe in VS Code
+### Dasselbe in Zed
 
-1. Öffne **`Source Control`**.
-2. Wenn Updates vorhanden sind, kannst du dort **`Pull`**, **`Sync`** oder **`Fetch`** ausführen.
-3. Bei Konflikten zeigt VS Code meist direkt Schaltflächen wie **`Accept Current`**, **`Accept Incoming`** oder **`Accept Both`**.
+1. Öffne das **Git Panel**.
+2. Wenn Updates vorhanden sind, kannst du dort **`Pull`**, **`Push`** oder **`Fetch`** ausführen.
+3. Bei Konflikten zeigt Zed direkt Schaltflächen wie **`Use main`**, **`Use feature-branch`** oder **`Use Both`**. Die Branch-Namen können bei dir anders heißen.
 4. Prüfe das Ergebnis trotzdem immer manuell.
 
 ---
@@ -323,7 +324,7 @@ git rebase --abort
 
 Wenn du an einem Kurstag am Repository arbeitest, ist diese Reihenfolge für viele Situationen sinnvoll:
 
-1. Terminal oder VS Code öffnen.
+1. Terminal oder Zed öffnen.
 2. In den Projektordner wechseln.
 3. Arbeitsstand prüfen:
 
@@ -379,7 +380,7 @@ Eine gute Commit Message ist:
 
 - `Git-Begriffe im Tutorial ergänzt`
 - `Fehler in der Clone-Anleitung korrigiert`
-- `Abschnitt zu VS Code hinzugefügt`
+- `Abschnitt zu Zed hinzugefügt`
 
 **Weniger gut:**
 

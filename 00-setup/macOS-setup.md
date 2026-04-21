@@ -115,36 +115,7 @@ zed --version
 
 ---
 
-## 6. OpenCode installieren und in Zed öffnen
-
-**OpenCode** ist ein Coding-Agent. In Zed läuft OpenCode über das **Agent Client Protocol (ACP)**. Zed startet dafür im Hintergrund den Befehl `opencode acp`.
-
-Da Homebrew schon installiert ist, installierst du OpenCode auf macOS so:
-
-```bash
-brew install anomalyco/tap/opencode
-```
-
-Danach prüfen:
-
-```bash
-opencode --version
-```
-
-### OpenCode mit Zed verbinden
-
-1. Öffne Zed.
-2. Öffne das `Extensions`-Fenster über `Zed > Extensions` oder `Cmd + Shift + X`.
-3. Suche nach `OpenCode` und installiere die Erweiterung.
-4. Öffne das Agent Panel mit der Schaltfläche unten rechts oder `Cmd + ?`.
-5. Klicke auf das Plus-Symbol oben rechts und wähle `OpenCode`.
-6. Verbinde beim ersten Start deinen gewünschten Modellanbieter mit `/connect`, falls OpenCode danach fragt.
-
-Jetzt kannst du mit dem Coding Agent entwickeln.
-
----
-
-## 7. Python installieren
+## 6. Python installieren
 
 Für das Strands SDK brauchst du Python **`3.10+`**.
 
@@ -165,7 +136,7 @@ Wenn beide Befehle eine Version anzeigen, ist Python korrekt installiert.
 
 ---
 
-## 8. Einen Kursordner anlegen und das Strands SDK installieren
+## 7. Einen Kursordner anlegen und das Strands SDK installieren
 
 **Das Strands SDK sollte nicht global auf dem System landen.** Für den Kurs ist eine virtuelle Umgebung der sauberste Weg.
 
@@ -225,7 +196,7 @@ deactivate
 
 ---
 
-## 9. Ollama installieren
+## 8. Ollama installieren
 
 **Ollama** ist die lokale Modell-Laufzeit, die wir im Kurs verwenden.
 
@@ -252,7 +223,7 @@ ollama --version
 
 ---
 
-## 10. Alles kurz testen
+## 19. Alles kurz testen
 
 Wenn alles installiert ist, sollten diese Befehle funktionieren:
 
@@ -268,6 +239,6 @@ ollama --version
 
 ---
 
-## 11. Danach
+## 10. Danach
 
 Wenn dein Setup fertig ist, lies als Nächstes [github-tutorial.md](./github-tutorial.md).
