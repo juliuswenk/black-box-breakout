@@ -8,23 +8,23 @@ Diese Anleitung installiert nicht Ollama selbst. Ollama wurde bereits in den all
 
 Hier geht es nur darum, das kleine freie Llama-Modell `llama3.2:1b` herunterzuladen, zu starten und kurz zu testen.
 
-`llama3.2:1b` ist etwa 1.3 GB gross. Es ist nicht das staerkste Modell, aber es ist klein, schnell und gut fuer erste lokale Tests geeignet.
+`llama3.2:1b` ist etwa 1.3 GB gross. Es ist nicht das stärkste Modell, aber es ist klein, schnell und gut für erste lokale Tests geeignet.
 
-## 1. Terminal oder PowerShell oeffnen
+## 1. Terminal oder PowerShell öffnen
 
 Auf macOS:
 
-1. Oeffne **Spotlight** mit `Cmd + Space`.
+1. Öffne **Spotlight** mit `Cmd + Space`.
 2. Suche nach **Terminal**.
-3. Oeffne die Terminal-App.
+3. Öffne die Terminal-App.
 
 Auf Windows:
 
-1. Oeffne das Startmenue.
+1. Öffne das Startmenü.
 2. Suche nach **PowerShell**.
-3. Oeffne **Windows PowerShell**.
+3. Öffne **Windows PowerShell**.
 
-## 2. Pruefen, ob Ollama bereit ist
+## 2. Prüfen, ob Ollama bereit ist
 
 Gib ein:
 
@@ -34,7 +34,7 @@ ollama --version
 
 Wenn eine Versionsnummer erscheint, ist Ollama bereit.
 
-Falls der Befehl nicht gefunden wird, gehe zur passenden allgemeinen Setup-Anleitung zurueck und pruefe die Ollama-Installation:
+Falls der Befehl nicht gefunden wird, gehe zur passenden allgemeinen Setup-Anleitung zurück und prüfe die Ollama-Installation:
 
 - `00-setup/macOS-setup.md`
 - `00-setup/windows-setup.md`
@@ -48,19 +48,19 @@ Gib ein:
 ollama run llama3.2:1b
 ```
 
-Beim ersten Start laedt Ollama das Modell herunter. Das kann einige Minuten dauern.
+Beim ersten Start lädt Ollama das Modell herunter. Das kann einige Minuten dauern.
 
 Wenn der Download fertig ist, erscheint eine Eingabezeile im Terminal oder in PowerShell. Du kannst nun mit dem Modell chatten.
 
 Beispiel:
 
 ```text
-Schreibe einen kurzen deutschen Ausstellungstext ueber eine interaktive KI-Installation.
+Schreibe einen kurzen deutschen Ausstellungstext über eine interaktive KI-Installation.
 ```
 
 ## 4. Kurzer Funktionstest
 
-Wenn du pruefen willst, ob alles funktioniert, schreibe im Chat:
+Wenn du prüfen willst, ob alles funktioniert, schreibe im Chat:
 
 ```text
 Antworte in einem Satz: Was ist ein lokales Sprachmodell?
@@ -76,9 +76,9 @@ Um den Chat zu beenden, schreibe:
 /bye
 ```
 
-Oder druecke `Ctrl + D`.
+Oder drücke `Ctrl + D`.
 
-## 6. Spaeter erneut starten
+## 6. Später erneut starten
 
 Nach der ersten Installation musst du das Modell nicht erneut herunterladen. Starte es einfach wieder mit:
 
@@ -98,17 +98,17 @@ ollama list
 
 ### `ollama` wird nicht gefunden
 
-Ollama ist wahrscheinlich noch nicht korrekt installiert oder das Terminal wurde nach der Installation nicht neu geoeffnet.
+Ollama ist wahrscheinlich noch nicht korrekt installiert oder das Terminal wurde nach der Installation nicht neu geöffnet.
 
-1. Schliesse Terminal oder PowerShell.
-2. Oeffne Terminal oder PowerShell erneut.
+1. Schließe Terminal oder PowerShell.
+2. Öffne Terminal oder PowerShell erneut.
 3. Versuche noch einmal:
 
    ```bash
    ollama --version
    ```
 
-Wenn das nicht hilft, gehe zur passenden allgemeinen Setup-Anleitung zurueck:
+Wenn das nicht hilft, gehe zur passenden allgemeinen Setup-Anleitung zurück:
 
 - `00-setup/macOS-setup.md`
 - `00-setup/windows-setup.md`
@@ -120,9 +120,9 @@ Das ist beim ersten Modell-Download normal. `llama3.2:1b` ist etwa 1.3 GB gross.
 
 ### Das Modell antwortet langsam
 
-Das haengt von deinem Computer ab. Kleine Modelle wie `llama3.2:1b` laufen meist auch ohne starke Grafikkarte, aber auf aelteren Rechnern koennen Antworten trotzdem etwas dauern.
+Das hängt von deinem Computer ab. Kleine Modelle wie `llama3.2:1b` laufen meist auch ohne starke Grafikkarte, aber auf älteren Rechnern können Antworten trotzdem etwas dauern.
 
-### Ollama laeuft nicht
+### Ollama läuft nicht
 
 Starte die Ollama-App manuell und versuche danach noch einmal:
 
@@ -130,7 +130,7 @@ Starte die Ollama-App manuell und versuche danach noch einmal:
 ollama run llama3.2:1b
 ```
 
-## Nuetzliche Befehle
+## Nützliche Befehle
 
 ```bash
 ollama --version
@@ -141,4 +141,4 @@ ollama run llama3.2:1b
 
 ## Quellen
 
-- Ollama Modellseite fuer `llama3.2:1b`: <https://ollama.com/library/llama3.2:1b>
+- Ollama Modellseite für `llama3.2:1b`: <https://ollama.com/library/llama3.2:1b>
