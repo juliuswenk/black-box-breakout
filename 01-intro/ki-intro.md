@@ -50,7 +50,7 @@ Wenn von **7B, 13B oder 70B** gesprochen wird, meint das die ungefähre Anzahl d
 
 ### Wie viel brauche ich für kreative Projekte?
 
-Die passende Modellgröße hängt weniger davon ab, ob ein Projekt „kreativ“ ist, sondern davon, **welche Aufgabe** das Modell übernehmen soll. Ein kleines Modell kann für schnelle Textvarianten völlig reichen, während komplexe Agenten-Workflows oder Bildgenerierung deutlich mehr Leistung brauchen.
+Die passende Modellgröße hängt davon ab, **welche Aufgabe** das Modell übernehmen soll. Ein kleines Modell kann für schnelle Textvarianten völlig reichen, während komplexe Agenten-Workflows oder Bildgenerierung deutlich mehr Leistung brauchen.
 
 Für **kurze Texte, Notizen, einfache Ideenlisten oder Stilvarianten** reichen oft kleine bis mittlere Sprachmodelle. Sie sind schnell, günstig und gut geeignet, wenn du die Ergebnisse ohnehin kuratierst und überarbeitest.
 

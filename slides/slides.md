@@ -79,6 +79,38 @@ layoutClass: gap-12
 </div>
 
 ---
+
+# Was ist der Unterschied?
+
+<div class = "mt-10 mb-5 rounded bg-sky-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Cloud-LLMs </div>
+
+<div class="grid grid-rows-4 justify-items-center">
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2">
+        laufen auf Servern großer Anbieter </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2">
+        brauchen Internet und API-Key </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2">
+        kosten meist pro Token </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2">
+        bieten oft hohe Qualität </div>
+</div>
+
+::right::
+
+<div class = "mt-20 mb-5 rounded bg-emerald-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Lokale-LLMs </div>
+
+<div class="grid grid-rows-4 justify-items-center">
+    <div class="w-2/3 m-3 rounded border border-slate-000 flex justify-center p-2">
+        Laufen auf deinem Rechner </div>
+    <div class="w-2/3 m-3 rounded border border-slate-000 flex justify-center p-2">
+        Modell liegt als Datei lokal </div>
+    <div class="w-2/3 m-3 rounded border border-slate-000 flex justify-center p-2">
+        Keine Tokenkosten pro Anfrage </div>
+    <div class="w-2/3 m-3 rounded border border-slate-000 flex justify-center p-2">
+        Brauchen eigene Hardware </div>
+</div>
+
+---
 layout: two-cols
 layoutClass: gap-12
 ---
@@ -214,27 +246,26 @@ Mehr Parameter bedeuten mehr Kapazität, aber auch mehr Rechenbedarf.
 </div>
 
 ---
-layout: two-cols
-layoutClass: gap-12
----
 
 # Wie viel brauche ich für kreative Projekte?
 
-## Kleine bis mittlere LLMs
 
-- kurze Texte
-- Ideenlisten
-- Stilvarianten
-- erste Code-Hilfen
-
-::right::
-
-## Stärkere Modelle / andere Modelle
-
-- lange, konsistente Texte
-- komplexe Recherche
-- Agenten-Workflows
-- Bildgenerierung: eigenes Bildmodell
+<div class="mt-10 grid cols-[0.7fr_1.3fr] rows-3 gap-6 place-items-center">
+    <div class="m-4 h-full w-full rounded bg-emerald-500 flex items-center justify-center"> Kleine Modelle (3-7B)</div>
+    <div class="grid cols-3 gap-4">
+        <div class="rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Einfache Texte </div>
+        <div class="rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Umformulierungen </div>
+        <div class="rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Simple Agenten </div>
+    </div>
+    <div class="m-4 h-full w-full rounded bg-amber-500 flex items-center justify-center"> Mittlere-Große Modelle (7-30B)</div>
+    <div class="grid cols-3 gap-4">
+        <div class="rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Agenten </div>
+        <div class="rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Komplexe Texte </div>
+        <div class="rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Coding Hilfe </div>
+    </div>
+    <div class="h-full w-full rounded bg-rose-500 flex items-center justify-center"> Eigene Modelle</div>
+    <div class="w-full rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Bildgenerierung </div>
+</div>
 
 ---
 layout: section
@@ -242,7 +273,9 @@ layout: section
 
 # 3. Chatbot vs. (Coding) Agent
 
-Antworten bekommen oder Prozesse ausführen lassen
+<div class="w-1/3 mx-auto mt-8 rounded bg-rose-500 p-6 font-bold flex items-center justify-center">
+Antworten vs Autonomie
+</div>
 
 ---
 layout: two-cols
@@ -251,17 +284,24 @@ layoutClass: gap-12
 
 # Was ist ein Chatbot?
 
-## Reaktiv
+<div class="mt-10 mb-5 rounded bg-sky-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Reaktiv </div>
 
-- du stellst eine Frage
-- das System antwortet
-- Fokus liegt auf Dialog
+<div class="grid grid-rows-3 justify-items-center">
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        du stellst eine Frage </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        das System antwortet </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        Fokus liegt auf Dialog </div>
+</div>
 
 ::right::
 
-## Grenze
+<div class="mt-20 mb-5 rounded bg-rose-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Grenze </div>
 
+<div class="mt-6 h-2/5 rounded border border-rose-500 flex flex-col justify-center p-6 text-center">
 Ein Chatbot plant meist nicht eigenständig und verändert keine Dateien ohne weitere Tooling-Schicht.
+</div>
 
 ---
 layout: two-cols
@@ -270,44 +310,31 @@ layoutClass: gap-12
 
 # Was ist ein (Coding) Agent?
 
-## Mehr als Chat
+<div class="mt-10 mb-5 rounded bg-emerald-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Mehr als Chat </div>
 
-- verfolgt Ziele
-- plant Schritte
-- nutzt Tools
-- liest und verändert Dateien
-
-::right::
-
-## Bausteine
-
-- LLM als Denkkomponente
-- Editor, Shell, Browser, APIs
-- Memory und Kontext
-
----
-layout: two-cols
-layoutClass: gap-12
----
-
-# Zusammenarbeit von Agenten
-
-## Rollen
-
-- Researcher
-- Critic
-- Planner
-- Writer
-- Editor
-- Curator
+<div class="grid grid-rows-4 justify-items-center">
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        verfolgt Ziele </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        plant Schritte </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        nutzt Tools </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        liest und verändert Dateien </div>
+</div>
 
 ::right::
 
-## Idee
+<div class="mt-20 mb-5 rounded bg-sky-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Bausteine </div>
 
-Mehrere Perspektiven arbeiten am selben Material.
-
-Das kann kreative Entscheidungen vorbereiten, aber nicht ersetzen.
+<div class="grid grid-rows-3 justify-items-center">
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        LLM als Denkkomponente </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        Editor, Shell, Browser, APIs </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        Memory und Kontext </div>
+</div>
 
 ---
 layout: section
@@ -315,7 +342,9 @@ layout: section
 
 # Was können Agenten im kreativen Bereich bringen?
 
+<div class="w-2/3 mx-auto mt-8 rounded bg-sky-500 p-6 font-bold flex items-center justify-center text-center">
 Recherche, Rapid Prototyping, Vibe Coding und Dokumentation
+</div>
 
 ---
 layout: two-cols
@@ -324,43 +353,41 @@ layoutClass: gap-12
 
 # Beispiele
 
-## Naheliegende Nutzung
+<div class="mt-10 mb-5 rounded bg-sky-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Naheliegende Nutzung </div>
 
-- Recherche strukturieren
-- Prototypen bauen
-- Varianten erzeugen
-- Prozess dokumentieren
+<div class="grid grid-rows-4 justify-items-center">
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        Recherche strukturieren </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        Prototypen bauen </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        Varianten erzeugen </div>
+    <div class="w-3/4 m-3 rounded border border-slate-000 flex justify-center p-2 text-center">
+        Prozess dokumentieren </div>
+</div>
 
 ::right::
 
-## Spannendere Frage
+<div class="mt-30 mb-5 rounded bg-rose-500 text-slate-000 font-bold p-4 mx-auto flex justify-center"> Spannendere Frage </div>
 
+<div class="mt-4 h-2/5 rounded border border-rose-500 flex flex-col justify-center p-6 text-center">
 Was passiert, wenn Agenten Teil des Werks werden?
 
 Nicht nur Werkzeug, sondern Akteur im Erlebnis.
+</div>
 
 ---
-layout: two-cols
-layoutClass: gap-12
+layout: center
+class: text-center
 ---
 
-# 1. Threshold State
+# Ars Electronica Campus Exhibition
 
-## Installation
+<div class="mt-6 rounded border border-slate-100 overflow-hidden w-full h-90">
+  <iframe src="https://www.artun.ee/en/eka-students-won-the-grand-prize-at-the-ars-electronica-festival-campus-exhibition/#gallery-1" class="w-full h-full bg-white"></iframe>
+</div>
 
-Ein Border-Control-Szenario:
-
-- Besuchende geben persönliche Informationen ab
-- ein AI-System bewertet diese Daten
-- Zutritt wird gewährt oder verweigert
-
-::right::
-
-## Agentische Struktur
-
-Das System recherchiert, fasst zusammen und trifft nach Regeln eine Entscheidung.
-
-Thema: Macht, Bias und automatisierte Kontrolle.
+<a href="https://www.artun.ee/en/eka-students-won-the-grand-prize-at-the-ars-electronica-festival-campus-exhibition/#gallery-1" target="_blank" rel="noreferrer" class="inline-flex mt-6 rounded bg-emerald-500 px-6 py-3 font-bold text-slate-000">Website öffnen</a>
 
 ---
 layout: center
@@ -369,10 +396,10 @@ class: text-center
 
 # References
 
-<div class="mx-auto max-w-2xl text-xl leading-relaxed">
+<div class="mx-auto max-w-2xl rounded border border-slate-100 p-6 text-xl leading-relaxed">
 Die Quellen stehen im Skript <code>01-intro/ki-intro.md</code>.
 </div>
 
-<div class="mt-10 text-sm opacity-70">
+<div class="mt-10 rounded bg-slate-700 p-4 text-sm opacity-90">
 Für die Slides wurden die Kernaussagen stark verdichtet.
 </div>
