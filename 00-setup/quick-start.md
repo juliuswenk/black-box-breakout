@@ -15,10 +15,8 @@ Für das Setup solltest du ungefähr Folgendes einplanen:
 - dein Rechner-Passwort, falls macOS oder Windows Administratorrechte abfragt
 - einen Mac mit **macOS 14 Sonoma oder neuer** oder einen Windows-PC mit **Windows 10 22H2 oder neuer**
 - einen 64-Bit-Rechner mit mindestens **8 GB RAM**
-- mindestens **3 GB freien Speicher**, weil Ollama-Modelle mehrere Gigabyte groß sein können
+- mindestens **2 GB freien Speicher**, weil Ollama-Modelle mehrere Gigabyte groß sein können
 - ein Terminal: auf macOS `Terminal`, auf Windows `PowerShell` oder `Windows-Terminal`
-- für OpenCode einen Modellanbieter oder API-Key, den du später mit `/connect` einrichtest
-
 ---
 
 ## macOS: Kurzinstallation

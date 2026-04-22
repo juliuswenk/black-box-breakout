@@ -20,9 +20,8 @@ Für das macOS-Setup solltest du ungefähr Folgendes einplanen:
 - einen Mac mit **macOS 14 Sonoma oder neuer**
 - einen 64-Bit-Mac mit Intel oder Apple Silicon
 - mindestens **8 GB RAM**
-- mindestens **3 GB freien Speicher**, weil Ollama-Modelle mehrere Gigabyte groß sein können
+- mindestens **2 GB freien Speicher** für das Kursmodell `llama3.2:1b`, besser etwas mehr Puffer
 - das macOS-Programm `Terminal`
-- für OpenCode einen Modellanbieter oder API-Key, den du später mit `/connect` einrichtest
 
 ---
 
@@ -218,8 +217,8 @@ ollama --version
 ### Wichtig
 
 - Die offizielle macOS-Doku nennt **macOS 14 Sonoma oder neuer** als Voraussetzung.
-- Das konkrete Modell für den Kurs kann später noch ergänzt werden.
-- Wir installieren hier zuerst die Laufzeit. Das eigentliche Modell laden wir bei Bedarf später.
+- Das Kursmodell ist `llama3.2:1b` und ist etwa 1,3 GB groß.
+- Wir installieren hier zuerst die Laufzeit. Das Modell laden wir später in `01-intro/setup-ollama.md`.
 
 ---
 

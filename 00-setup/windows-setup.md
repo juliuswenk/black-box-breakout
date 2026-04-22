@@ -20,9 +20,8 @@ Für das Windows-Setup solltest du ungefähr Folgendes einplanen:
 - einen Windows-PC mit **Windows 10 22H2 oder neuer**, besser Windows 11
 - einen 64-Bit-Rechner mit x64 oder Arm64
 - mindestens **8 GB RAM**
-- mindestens **3 GB freien Speicher**, weil Ollama-Modelle mehrere Gigabyte groß sein können
+- mindestens **2 GB freien Speicher** für das Kursmodell `llama3.2:1b`, besser etwas mehr Puffer
 - `PowerShell` oder `Windows-Terminal`
-- für OpenCode einen Modellanbieter oder API-Key, den du später mit `/connect` einrichtest
 
 ---
 
@@ -237,8 +236,8 @@ ollama --version
 ### Wichtig
 
 - Laut offizieller Doku braucht Ollama auf Windows mindestens **Windows 10 22H2** oder neuer.
-- Für die Grundinstallation brauchst du mindestens einige Gigabyte freien Speicher.
-- Das eigentliche Modell laden wir bei Bedarf später.
+- Das Kursmodell ist `llama3.2:1b` und ist etwa 1,3 GB groß.
+- Wir installieren hier zuerst die Laufzeit. Das Modell laden wir später in `01-intro/setup-ollama.md`.
 
 ---
 
