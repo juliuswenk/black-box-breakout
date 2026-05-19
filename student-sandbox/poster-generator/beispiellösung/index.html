@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiss Event Poster Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="poster-shell" aria-label="Poster Vorschau">
+        <article id="poster" class="poster palette-signal layout-stack">
+          <div class="grid-lines"></div>
+          <div class="block block-a"></div>
+          <div class="block block-b"></div>
+          <div class="block block-c"></div>
+          <div class="stripe stripe-a"></div>
+          <div class="stripe stripe-b"></div>
+
+          <img id="imageA" class="asset asset-a" src="bilder/fgj-1.jpg" alt="" />
+          <img id="imageC" class="asset asset-c" src="bilder/william-morris-letter-y.svg" alt="" />
+
+          <div class="poster-meta">
+            <span id="posterDate">24.08.2026</span>
+            <span id="posterPlace">Halle 7 / Berlin</span>
+          </div>
+
+          <h1 id="posterTitle">Raster Nacht</h1>
+          <p id="posterSubtitle">Visual systems, hard cuts, moving images</p>
+          <p class="poster-index">No. <span id="posterNumber">03</span></p>
+        </article>
+      </section>
+
+      <aside class="controls" aria-label="Poster Steuerung">
+        <div class="panel-heading">
+          <p>Swiss Event Tool</p>
+          <h2>Poster Generator</h2>
+        </div>
+
+        <label>
+          Titel
+          <input id="titleInput" type="text" value="Raster Nacht" />
+        </label>
+
+        <label>
+          Untertitel
+          <input id="subtitleInput" type="text" value="Visual systems, hard cuts, moving images" />
+        </label>
+
+        <label>
+          Ort
+          <input id="placeInput" type="text" value="Halle 7 / Berlin" />
+        </label>
+
+        <div class="control-group">
+          <p>Palette</p>
+          <div class="button-row">
+            <button type="button" data-palette="signal">Signal</button>
+            <button type="button" data-palette="mono">Mono</button>
+            <button type="button" data-palette="acid">Acid</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <p>Layout</p>
+          <div class="button-row">
+            <button type="button" data-layout="stack">Stack</button>
+            <button type="button" data-layout="split">Split</button>
+            <button type="button" data-layout="field">Field</button>
+          </div>
+        </div>
+
+        <button id="motionToggle" type="button">Motion on</button>
+        <button id="randomize" class="primary-action" type="button">Randomize</button>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
