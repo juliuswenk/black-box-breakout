@@ -9,6 +9,7 @@ drawings:
   persist: false
 mdc: true
 ---
+
 <div class ="text-6xl font-bold text-slate-000">
 Black-Box-Breakout: Intro
 </div>
@@ -31,6 +32,12 @@ Lokale LLMs, Cloud-Anbieter und AI Agents
     <div class="mt-2 font-bold">Chatbot vs. Agent</div>
   </div>
 </div>
+
+<!--
+Orga erklären
+Dann GitHub öffnen und Repo erklären
+Dann mit Präsident beginnen
+-->
 
 ---
 layout: section
@@ -249,7 +256,7 @@ Mehr Parameter bedeuten mehr Kapazität, aber auch mehr Rechenbedarf.
 
 # Wie viel brauche ich für kreative Projekte?
 
-
+<div class="h-full items-center">
 <div class="mt-10 grid cols-[0.7fr_1.3fr] rows-3 gap-6 place-items-center">
     <div class="m-4 h-full w-full rounded bg-emerald-500 flex items-center justify-center"> Kleine Modelle (3-7B)</div>
     <div class="grid cols-3 gap-4">
@@ -265,6 +272,7 @@ Mehr Parameter bedeuten mehr Kapazität, aber auch mehr Rechenbedarf.
     </div>
     <div class="h-full w-full rounded bg-rose-500 flex items-center justify-center"> Eigene Modelle</div>
     <div class="w-full rounded border border-slate-000 text-slate-000 flex items-center justify-center p-4"> Bildgenerierung </div>
+</div>
 </div>
 
 ---
