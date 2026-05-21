@@ -2,7 +2,7 @@
 theme: slidev-theme-dracula
 title: Vibe Coding 101
 info: |
-  Verdichteter Input zu Vibe Coding, Coding Agents und sinnvoller Arbeitsweise
+  Vibe Coding, Coding Agents und (sinnvolle) Arbeitsweise
 class: text-left
 transition: slide-left
 drawings:
@@ -214,16 +214,6 @@ Je klarer der Rahmen ist, desto weniger muss der Agent raten.
 </div>
 
 ---
-layout: section
----
-
-# OpenCode in Zed
-
-<div class="w-1/2 mx-auto mt-8 rounded bg-sky-500 p-6 font-bold flex items-center justify-center text-center">
-Ein Projektordner, ein Agent-Thread, kleine Aufgaben
-</div>
-
----
 
 # Ein sinnvoller Ablauf
 
@@ -279,47 +269,6 @@ Welche Zeilen sollte ich mir anschauen?
 </div>
 
 ---
-
-# Gute Aufgaben am Anfang
-
-<div class="mt-10 grid grid-cols-4 gap-4">
-  <div class="rounded bg-emerald-500 p-5 text-center font-bold">Webseite</div>
-  <div class="rounded bg-sky-500 p-5 text-center font-bold">Layout ändern</div>
-  <div class="rounded bg-rose-500 p-5 text-center font-bold">Buttons bauen</div>
-  <div class="rounded bg-amber-500 p-5 text-center font-bold">Interaktion</div>
-  <div class="rounded border border-slate-000 p-5 text-center">Text ergänzen</div>
-  <div class="rounded border border-slate-000 p-5 text-center">Karten bauen</div>
-  <div class="rounded border border-slate-000 p-5 text-center">Fehler erklären</div>
-  <div class="rounded border border-slate-000 p-5 text-center">README schreiben</div>
-</div>
-
----
-layout: two-cols
-layoutClass: gap-12
----
-
-# Am Anfang vermeiden
-
-<div class="mt-10 grid grid-rows-6 justify-items-center">
-  <div class="w-3/4 m-2 rounded bg-rose-500 flex justify-center p-2 text-center">Login-Systeme</div>
-  <div class="w-3/4 m-2 rounded bg-rose-500 flex justify-center p-2 text-center">Datenbanken</div>
-  <div class="w-3/4 m-2 rounded bg-rose-500 flex justify-center p-2 text-center">Bezahlsysteme</div>
-  <div class="w-3/4 m-2 rounded bg-rose-500 flex justify-center p-2 text-center">große Refactorings</div>
-  <div class="w-3/4 m-2 rounded bg-rose-500 flex justify-center p-2 text-center">mehrere Frameworks</div>
-  <div class="w-3/4 m-2 rounded bg-rose-500 flex justify-center p-2 text-center">unklare Security</div>
-</div>
-
-::right::
-
-# Warum?
-
-<div class="mt-20 h-2/5 rounded border border-rose-500 flex flex-col justify-center p-6 text-center">
-Diese Aufgaben haben viele versteckte Abhängigkeiten.
-<br /><br />
-Für den Anfang sind sichtbare, kleine und überprüfbare Schritte besser.
-</div>
-
----
 layout: section
 ---
 
@@ -372,7 +321,7 @@ Was ist die minimale Korrektur?
 
 <div class="mt-10 grid grid-cols-2 gap-6">
   <div class="rounded border border-slate-000 p-5 text-center text-xl">Ändere nur HTML und CSS.</div>
-  <div class="rounded border border-slate-000 p-5 text-center text-xl">Füge keine neuen Abhängigkeiten hinzu.</div>
+  <div class="rounded bg-emerald-500 p-5 text-center text-xl">Stelle mir vorher ein paar Fragen(!)</div>
   <div class="rounded border border-slate-000 p-5 text-center text-xl">Erstelle zuerst einen Plan.</div>
   <div class="rounded border border-slate-000 p-5 text-center text-xl">Warte auf meine Bestätigung.</div>
   <div class="rounded border border-slate-000 p-5 text-center text-xl">Halte die Lösung einfach.</div>

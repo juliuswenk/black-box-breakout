@@ -177,8 +177,7 @@ Verbessere den Randomize-Button.
 Arbeite nur im Ordner `student-sandbox/poster-generator`.
 Verändere keine Dateien außerhalb von `student-sandbox/poster-generator`.
 
-Berücksichtige vorhandene Dateien aus `moods/`, `bilder/` und `fonts/` weiterhin:
-- `moods/` als visuelle Vorlage
+Berücksichtige vorhandene Dateien aus `bilder/` und `fonts/` weiterhin:
 - `bilder/` direkt im Poster
 - `fonts/` direkt in der Typografie
 
